@@ -69,6 +69,9 @@ img {
   background-color: #2bd0d0;
   border-radius: 28px;
 }
+.start-link:hover {
+  background-color: #9ae3e3;
+}
 /* HEADER STYLES BEGIN */
 
 .site-header {
@@ -103,7 +106,7 @@ img {
   margin-right: 32px;
 }
 
-.site-header--link {
+.site-header__link--color {
   font-weight: 700;
   font-size: 15px;
   line-height: 22px;
@@ -111,15 +114,16 @@ img {
   color: #9e9aa8;
 }
 
+.nav__link:hover {
+  color: #34313D;
+}
+
 .site-header__sign {
-  display: inline-block;
+  width: 105px;
   margin-left: 37px;
   padding: 8px;
-  width: 105px;
-  text-align: center;
   color: #fff;
   background-color: #2bd0d0;
-  border-radius: 28px;
 }
 
 /* MAIN STYLES BEGIN */
@@ -127,6 +131,7 @@ img {
 
 .hero__text {
   width: 564px;
+  padding-bottom: 138px;
 }
 
 .hero__title {
@@ -146,4 +151,178 @@ img {
   line-height: 36px;
   letter-spacing: 0.15px;
   color: #9e9aa8;
+}
+
+.aside-form {
+  position: relative;
+  top: 84px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52px 64px;
+  background-image: url("../images/formbgimg.png");
+  background-repeat: no-repeat;
+}
+
+.aside-form__input {
+  width: 769px;
+  padding: 23px 32px;
+  border: 0;
+  border-radius: 10px;
+}
+.aside-form__input::placeholder {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0.15000000596046448px; 
+}
+.aside-form__button {
+  width: 188px;
+  padding: 18px 20px 16px 20px;
+  border: 0;
+  border-radius: 10px;  
+}
+
+.static {
+  padding-top: 204px;
+  padding-bottom: 208px;
+  background-color: #f2f2f2;
+}
+.static__text {
+  width: 540px;
+  margin: 0 auto 100px auto;
+  text-align: center;
+}
+.static__title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: #34313d;
+}
+.static__desc {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.122727px;
+  color: #9e9aa8;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../images/staticbgimg.png");
+  background-repeat: no-repeat;
+  background-position: top 150px center;
+}
+.card__item {
+  position: relative;
+  width: 350px;
+  padding: 77px 32px 41px 32px;
+  background-color: #fff;
+}
+.card__item::before {
+  position: absolute;
+  top: -44px;
+  display: block;
+  width: 88px;
+  height: 88px;
+  background-color: #3a3054;
+  background-image: url("../images/iconstatic.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  content: "";
+}
+.card__item:nth-child(2) {
+  top: 44px;
+}
+.card__item:last-child {
+  top: 88px;
+}
+.card__item--speed::before {
+  background-image: url("../images/iconspeed.svg");
+}
+.card__item--brush::before {
+  background-image: url("../images/iconbrush.svg");
+}
+.card__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;  
+}
+.card__desc {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;  
+}
+
+.site-article {
+  padding-top: 57px;
+  padding-bottom: 57px;
+  text-align: center;
+  background-image: url("../images/articlebg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.site-article__title {
+  margin-top: 0;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;  
+}
+.site-footer {
+  padding-top: 71px;
+  padding-bottom: 72px;
+  background-color: #232127;
+}
+
+.site-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.site-footer__inner {
+  display: flex;
+}
+.site-footer__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.site-footer__inner-item:not(:last-child) {
+  margin-right: 107px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.site-footer__bold {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 22px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: #fff;
+}
+.site-footer__link {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.234375px;
+  text-decoration: none;
+  color: #bfbfbf;
+}
+.site-footer__link:hover {
+  color: #2bd0d0;
+}
+.site-footer__img:hover  {
+  fill: #2bd0d0;
 }
